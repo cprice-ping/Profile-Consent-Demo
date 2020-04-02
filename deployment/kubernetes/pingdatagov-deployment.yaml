@@ -25,11 +25,6 @@ spec:
     spec:
       containers:
       - env:
-        - name: HTTPS_PORT
-          valueFrom:
-            configMapKeyRef:
-              key: HTTPS_PORT
-              name: env-vars
         - name: PF_LOG_LEVEL
           valueFrom:
             configMapKeyRef:
