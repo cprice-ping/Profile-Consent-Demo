@@ -1,0 +1,14 @@
+apiVersion: v1
+data:
+  HTTPS_PORT: "9443"
+  PF_LOG_LEVEL: DEBUG
+  PF_USER_PWD: 2FederateM0re
+  PING_IDENTITY_ACCEPT_EULA: "YES"
+  REST_API_HOSTNAME: int-docker.cpricelab.com
+  USER_BASE_DN: dc=somethingdifferent.com
+kind: ConfigMap
+metadata:
+  creationTimestamp: null
+  labels:
+    io.kompose.service: pingaccess-env-vars
+  name: env-vars

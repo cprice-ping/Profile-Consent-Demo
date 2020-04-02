@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    kompose.cmd: kompose convert -f Compose/docker-compose.yaml --volumes configMap
+    kompose.version: 1.21.0 ()
+  creationTimestamp: null
+  labels:
+    io.kompose.service: pingdatagov
+  name: pingdatagov
+spec:
+  ports:
+  - name: "4443"
+    port: 4443
+    targetPort: 443
+  selector:
+    io.kompose.service: pingdatagov
+status:
+  loadBalancer: {}
