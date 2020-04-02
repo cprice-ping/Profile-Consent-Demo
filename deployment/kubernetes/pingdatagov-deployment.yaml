@@ -66,15 +66,9 @@ spec:
         - containerPort: 443
         resources: {}
         volumeMounts:
-        - mountPath: /run/secrets/devops-secret
-          name: devops-secret
+        envFrom:
+          - secretRef:
+              name: devops-secret
       restartPolicy: Always
       serviceAccountName: ""
-      volumes:
-      - name: devops-secret
-        secret:
-          items:
-          - key: devops-secret
-            path: devops-secret
-          secretName: devops-secret
 status: {}
