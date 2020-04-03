@@ -59,6 +59,7 @@ spec:
         name: pingdatagov
         ports:
         - containerPort: 443
+        - containerPort: 636
         resources: {}
         volumeMounts:
         envFrom:

@@ -13,6 +13,9 @@ spec:
   - name: "4443"
     port: 4443
     targetPort: 443
+  - name: "2636"
+    port: 2636
+    targetPort: 636
   selector:
     io.kompose.service: pingdatagov
 status:

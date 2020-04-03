@@ -20,6 +20,11 @@ data:
                 "value": "fe92b82b-dc17-4a3d-a864-990a6f0e30d9",
                 "enabled": true
             },
+            {
+                "key": "pfAuthnApiUrl",
+                "value": "https://cold-handstand.glitch.me",
+                "enabled": true
+            },
     	    {
     	        "key": "paVirtualHost",
     	        "value": "demo.cpricelab.com",

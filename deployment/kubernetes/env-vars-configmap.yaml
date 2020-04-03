@@ -4,7 +4,7 @@ data:
   PF_LOG_LEVEL: DEBUG
   PF_USER_PWD: 2FederateM0re
   PING_IDENTITY_ACCEPT_EULA: "YES"
-  REST_API_HOSTNAME: int-docker.cpricelab.com
+  REST_API_HOSTNAME: pingdatagov-pap-ping-cloud-devops-eks-cprice.ping-devops.com
   USER_BASE_DN: dc=customer360.com
 kind: ConfigMap
 metadata:
