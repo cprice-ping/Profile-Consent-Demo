@@ -27,35 +27,10 @@ spec:
       - env:
         - name: HTTPS_PORT
           value: "9443"
-        - name: PF_LOG_LEVEL
-          valueFrom:
-            configMapKeyRef:
-              key: PF_LOG_LEVEL
-              name: env-vars
-        - name: PF_USER_PWD
-          valueFrom:
-            configMapKeyRef:
-              key: PF_USER_PWD
-              name: env-vars
-        - name: PING_IDENTITY_ACCEPT_EULA
-          valueFrom:
-            configMapKeyRef:
-              key: PING_IDENTITY_ACCEPT_EULA
-              name: env-vars
-        - name: REST_API_HOSTNAME
-          valueFrom:
-            configMapKeyRef:
-              key: REST_API_HOSTNAME
-              name: env-vars
         - name: SERVER_PROFILE_PATH
           value: pingdatagovernance-pap
         - name: SERVER_PROFILE_URL
           value: https://github.com/cprice-ping/Profile-Consent-Demo.git
-        - name: USER_BASE_DN
-          valueFrom:
-            configMapKeyRef:
-              key: USER_BASE_DN
-              name: env-vars
         image: pingidentity/pingdatagovernancepap:8.1.0.0-EA-edge
         imagePullPolicy: "Always"
         name: pingdatagov-pap
