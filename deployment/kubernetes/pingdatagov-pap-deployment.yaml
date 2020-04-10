@@ -25,6 +25,11 @@ spec:
     spec:
       containers:
       - env:
+        - name: PING_IDENTITY_ACCEPT_EULA
+          valueFrom:
+            configMapKeyRef:
+              key: PING_IDENTITY_ACCEPT_EULA
+              name: env-vars
         - name: HTTPS_PORT
           value: "9443"
         - name: SERVER_PROFILE_PATH
