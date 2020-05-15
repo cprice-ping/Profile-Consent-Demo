@@ -1,15 +1,14 @@
-PING_IDENTITY_ACCEPT_EULA="YES"
+PING_IDENTITY_ACCEPT_EULA=YES
 
 # PF Logging Level
-PF_LOG_LEVEL="DEBUG"
+PF_LOG_LEVEL=DEBUG
 
 # PD User BASE DN
-USER_BASE_DN="dc=somethingdifferent.com"
+USER_BASE_DN=dc=somethingdifferent.com
 
 # PF Admin Password
 # Note - this should match `pfAdminPwd` in postman_vars.json
-PF_USER_PWD="2FederateM0re"
+PF_USER_PWD=2FederateM0re
 
 # PAP Variables
-REST_API_HOSTNAME="int-docker.cpricelab.com"
-HTTPS_PORT="9443"
+REST_API_HOSTNAME=int-docker.cpricelab.com
